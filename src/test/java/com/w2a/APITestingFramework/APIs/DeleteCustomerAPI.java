@@ -14,6 +14,9 @@ public class DeleteCustomerAPI  extends BaseTest {
 //	public static Response sendDeleteRequestToCreateCustomerApiWithValidAuthKey(String name, String email,String description) {
 	public static Response sendDeleteRequestToCreateCustomerApiWithValidID(Hashtable<String, String> data) {	
 		
+		
+		//Inside DeleteCustomer API
+		
 		Response response =given().auth().basic(config.getProperty("validSecretKey"), "")
 		.delete(config.getProperty("customerAPIEndPoint")+"/"+data.get("id"));
 		
