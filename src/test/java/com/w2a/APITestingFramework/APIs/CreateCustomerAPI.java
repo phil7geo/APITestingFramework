@@ -15,7 +15,7 @@ public class CreateCustomerAPI extends BaseTest{
 	public static Response sendPostRequestToCreateCustomerApiWithValidAuthKey(String name, String email,String description) {
 		
 		
-		//sample comment
+		//sample comment 123
 		
 		Response response =given().auth().basic(config.getProperty("validSecretKey"), "")
 		.formParam("email", email).formParam("description",description)
